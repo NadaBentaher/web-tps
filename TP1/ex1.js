@@ -1,5 +1,5 @@
 var x= 5; //porté fctnelle
-//let y= 3; // portée bloc
+let y= 3; // portée bloc
 const z=2;// portée bloc
 //bloc
 {

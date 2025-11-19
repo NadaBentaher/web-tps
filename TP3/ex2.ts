@@ -10,3 +10,8 @@ enum Role {
 }
 let monRole: Role = Role.Admin;
 
+
+console.log(Name, age, isAdmin);           // Nada 22 true
+console.log(scores, "Premier score:", scores[0]); 
+console.log(etudiant[0], etudiant[1]);     // Nada 22
+console.log(monRole, Role[monRole]);       // 1 Admin

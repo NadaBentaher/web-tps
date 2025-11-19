@@ -16,6 +16,15 @@ class Student extends Person{
         this.school=school;
     }
 }
+// Test Person et Student
+const p1 = new Person("Nada", 22);
+p1.greet();  // Bonjour, je m'appelle Nada
+
+const s1 = new Student("Rihem", 20, "FST");
+s1.greet();  
+console.log(`${s1.name} étudie à ${s1.school}`);
+
+
 abstract class Shape{
     abstract area() : number;
 }
@@ -42,6 +51,13 @@ class Rectangle extends Shape{
         return this.Longueur*this.largeur;
     }
 }
+// Test Shape
+const c1 = new Circle(5);
+console.log("Surface du cercle:", c1.area());
+
+const r1 = new Rectangle(4, 6);
+console.log("Surface du rectangle:", r1.area());
+
 interface Drivable{
     drive() : void;
 }
@@ -50,3 +66,7 @@ class Car implements Drivable{
         console.log("driving");
     }
 }
+
+// Test Car
+const car1 = new Car();
+car1.drive();
